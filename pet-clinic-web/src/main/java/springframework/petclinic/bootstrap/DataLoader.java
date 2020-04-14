@@ -3,6 +3,7 @@ package springframework.petclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import springframework.petclinic.model.Owner;
+import springframework.petclinic.model.Vet;
 import springframework.petclinic.services.OwnerService;
 import springframework.petclinic.services.VetService;
 
@@ -30,5 +31,13 @@ public class DataLoader implements CommandLineRunner {
 
         System.out.println("Loaded owner...");
 
+        Vet vet = new Vet();
+        vet.setId(2L);
+        vet.setFirstName("Mike");
+        vet.setLastName("Ross");
+
+        vetService.save(vet);
+
+        System.out.println("Loaded vets....");
     }
 }
