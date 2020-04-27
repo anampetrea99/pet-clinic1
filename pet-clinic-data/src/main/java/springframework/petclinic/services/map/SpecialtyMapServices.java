@@ -1,28 +1,28 @@
 package springframework.petclinic.services.map;
 
-import springframework.petclinic.model.Speciality;
-import springframework.petclinic.services.SpecialtiesService;
+import springframework.petclinic.model.Specialty;
+import springframework.petclinic.services.SpecialtyService;
 
 import java.util.Set;
 
-public class SpecialtyMapServices extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+public class SpecialtyMapServices extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
-    public Set<Speciality> findAll() {
+    public Set<Specialty> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Speciality findById(Long id) {
+    public Specialty findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Speciality save(Speciality object) {
+    public Specialty save(Specialty object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(Specialty object) {
         super.delete(object);
     }
 
